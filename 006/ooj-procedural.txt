@@ -1,0 +1,3 @@
+Na programação procedural, um programa é escrito de forma sequencial dentro de uma única grande função, podendo ter sub funções. Esse programa segue uma abordagem de passo a passo. As funções sao executadas em ordem, permitindo um controle de fluxo do programa.
+
+Já a orientação a objetos se baseia no conceito de "objetos", que são entidades que combinam atributos e métodos relacionados. Ao usar a orientação a objetos, é possivel organizar o código de forma mais modular, facilitando a manutenção e a reutilização
