@@ -7,17 +7,10 @@
 		
 		<provider>org.hibernate.ejb.HibernatePersistence</provider>
 		
-		<!-- <class>br.com.rpires.domain.Cliente</class>
-		<class>br.com.rpires.domain.Pessoa</class>
-		<class>br.com.rpires.domain.Endereco</class>
-		<class>br.com.rpires.domain.Curso</class>
-		<class>br.com.rpires.domain.Matricula</class>
-		<class>br.com.rpires.domain.Empregado</class>
-		<class>br.com.rpires.domain.Projeto</class> -->
 		
 		<properties>
             <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" /> <!-- DB Driver -->
-            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:15432/modulo32" /> <!-- BD Mane -->
+            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:15432/modulo33" /> <!-- BD Mane -->
             <property name="javax.persistence.jdbc.user" value="postgres" /> <!-- DB User -->
             <property name="javax.persistence.jdbc.password" value="admin" /> <!-- DB Password -->
 

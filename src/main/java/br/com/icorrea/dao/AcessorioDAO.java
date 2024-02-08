@@ -4,24 +4,24 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
-import br.com.icorrea.domain.Produto;
+import br.com.icorrea.domain.Acessorio;
 
-public class ProdutoDAO implements IProdutoDAO {
+public class AcessorioDAO implements IAcessorioDAO{
 
 	@Override
-	public Produto cadastrar(Produto prod) {
+	public Acessorio cadastrar(Acessorio acessorio) {
 		EntityManagerFactory entityManagerFactory = 
 				Persistence.createEntityManagerFactory("ExemploJPA");
 		EntityManager entityManager = entityManagerFactory.createEntityManager();
 		
 		entityManager.getTransaction().begin();
-		entityManager.persist(prod);
+		entityManager.persist(acessorio);
 		entityManager.getTransaction().commit();
 		 
 		entityManager.close();
 		entityManagerFactory.close();
 		
-		return prod;
+		return acessorio;
 	}
 
 }

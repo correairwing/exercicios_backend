@@ -4,24 +4,24 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
-import br.com.icorrea.domain.Curso;
+import br.com.icorrea.domain.Carro;
 
-public class CursoDAO implements ICursoDAO {
+public class CarroDAO implements ICarroDAO {
 
 	@Override
-	public Curso cadastrar(Curso curso) {
+	public Carro cadastrar(Carro car) {
 		EntityManagerFactory entityManagerFactory = 
 				Persistence.createEntityManagerFactory("ExemploJPA");
 		EntityManager entityManager = entityManagerFactory.createEntityManager();
 		
 		entityManager.getTransaction().begin();
-		entityManager.persist(curso);
+		entityManager.persist(car);
 		entityManager.getTransaction().commit();
 		 
 		entityManager.close();
 		entityManagerFactory.close();
 		
-		return curso;
+		return car;
 	}
 
 }

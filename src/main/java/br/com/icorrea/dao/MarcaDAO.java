@@ -4,24 +4,24 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
-import br.com.icorrea.domain.Matricula;
+import br.com.icorrea.domain.Marca;
 
-public class MatriculaDAO implements IMatriculaDAO {
+public class MarcaDAO implements IMarcaDAO {
 
 	@Override
-	public Matricula cadastrar(Matricula mat) {
+	public Marca cadastrar(Marca marca) {
 		EntityManagerFactory entityManagerFactory = 
 				Persistence.createEntityManagerFactory("ExemploJPA");
 		EntityManager entityManager = entityManagerFactory.createEntityManager();
 		
 		entityManager.getTransaction().begin();
-		entityManager.persist(mat);
+		entityManager.persist(marca);
 		entityManager.getTransaction().commit();
 		 
 		entityManager.close();
 		entityManagerFactory.close();
 		
-		return mat;
+		return marca;
 	}
 
 }
